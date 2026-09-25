@@ -1,0 +1,10 @@
+5-MINUTE RENDER KEEP-ALIVE
+
+1. Deploy the bot on Render.
+2. Open UptimeRobot and create an HTTP(s) monitor.
+3. URL:
+   https://YOUR-SERVICE.onrender.com/health
+4. Choose the Free plan / 5-minute interval.
+5. Save the monitor.
+
+Do NOT add a self-ping timer inside the bot for this purpose: an internal timer cannot keep a sleeping Render instance alive. The request needs to come from outside Render.
